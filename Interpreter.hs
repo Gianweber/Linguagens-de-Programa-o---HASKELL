@@ -23,6 +23,7 @@ subst x n (App e1 e2) = App (subst x n e1) (subst x n e2)
 subst x n (Add e1 e2) = Add (subst x n e1) (subst x n e2)
 subst x n (And e1 e2) = And (subst x n e1) (subst x n e2)
 subst x n (If e1 e2 e3) = If(subst x n e1) (subst x n e2) (subst x n e3)
+
 --aula dia 20
 subst x n (Or e1 e2) = Or (subst x n e1) (subst x n e2)
 subst x n (Sub e1 e2) = Sub (subst x n e1) (subst x n e2)
